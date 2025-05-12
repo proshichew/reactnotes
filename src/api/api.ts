@@ -1,11 +1,5 @@
 import axios, { AxiosInstance, AxiosResponse } from 'axios';
-
-export interface Note {
-  id: number;
-  title: string;
-  content: string;
-  createdAt: Date;
-}
+import { Note } from '../types/Interfaces/Note';
 
 export class NoteService {
   private static axiosInstance: AxiosInstance;
